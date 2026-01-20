@@ -1,1 +1,1 @@
-ss -lntup
+netstat -lntup
