@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # use ip -4 addr show to output current available ip address then use a regex to filter the address
-ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
